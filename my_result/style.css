@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-dark: hsl(300, 43%, 22%);
+  --primary-light: hsl(333, 80%, 67%);
+  --neutral-dark: hsl(303, 10%, 53%);
+  --neutral-light: hsl(300, 24%, 96%);
+}
+
+.primary-dark {
+  color: var(--primary-dark);
+}
+.primary-light {
+  color: var(--primary-light);
+}
+.neutral-dark {
+  color: var(--neutral-dark);
+}
+.neutral-light {
+  color: var(--neutral-light);
+}
+
+html {
+  font-family: Spartan, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  padding: 40px;
+  color: white;
+}
+
+.header-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.ratings-block {
+  margin-bottom: 30px;
+}
+
+.rating-card {
+  background-color: var(--neutral-light);
+  text-align: center;
+  font-weight: 700;
+  margin: 15px 0px;
+  border-radius: 10px;
+}
+
+.lot-stars {
+  padding: 10px 10px 5px;
+}
+
+.rated-by {
+  padding: 5px 10px 10px;
+}
+
+.star {
+  display: inline;
+}
+
+.testimonial-card {
+  background-color: var(--primary-dark);
+  padding: 30px;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-header img {
+  width: 100%;
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+.customer-name {
+  margin-left: 25px;
+}
+
+.card-header span {
+  display: block;
+  padding-top: 5px;
+}
+
+/* Media Queries For Large Screens */
+
+@media (min-width: 1084px) {
+  body {
+    padding: 0px 100px;
+  }
+
+  .main-container {
+    height: 100vh;
+    max-width: 1150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+  }
+
+  .main-container > * {
+    flex: 1 100%;
+  }
+
+  .header-block {
+    text-align: left;
+    padding-right: 50px;
+  }
+
+  .header-block,
+  .ratings-block {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .header {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+
+  .rating-card {
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    min-height: 55px;
+  }
+
+  .rating-card:first-child {
+    margin-top: 0;
+    transform: translateX(-50px);
+  }
+
+  .rating-card:nth-child(2) {
+    transform: translateX(-25px);
+  }
+
+  .lot-stars {
+    padding: 0 20px;
+  }
+
+  .rated-by {
+    padding: 10px;
+  }
+
+  .testimonials {
+    display: flex;
+    /* position: relative; */
+  }
+
+  .testimonial-card {
+    margin: 10px;
+    flex: 1;
+  }
+
+  .testimonial-card:first-child {
+    margin-left: 0;
+  }
+
+  .testimonial-card:nth-child(2) {
+    transform: translateY(15px);
+  }
+
+  .testimonial-card:nth-child(3) {
+    transform: translateY(30px);
+  }
+}
